@@ -1,0 +1,129 @@
+﻿2025-10-26T14:34:33.3758669Z Current runner version: '2.329.0'
+2025-10-26T14:34:33.3780555Z ##[group]Runner Image Provisioner
+2025-10-26T14:34:33.3781369Z Hosted Compute Agent
+2025-10-26T14:34:33.3782184Z Version: 20250912.392
+2025-10-26T14:34:33.3782821Z Commit: d921fda672a98b64f4f82364647e2f10b2267d0b
+2025-10-26T14:34:33.3783472Z Build Date: 2025-09-12T15:23:14Z
+2025-10-26T14:34:33.3784113Z ##[endgroup]
+2025-10-26T14:34:33.3784651Z ##[group]Operating System
+2025-10-26T14:34:33.3785241Z Ubuntu
+2025-10-26T14:34:33.3785663Z 24.04.3
+2025-10-26T14:34:33.3786206Z LTS
+2025-10-26T14:34:33.3786660Z ##[endgroup]
+2025-10-26T14:34:33.3787150Z ##[group]Runner Image
+2025-10-26T14:34:33.3787815Z Image: ubuntu-24.04
+2025-10-26T14:34:33.3788325Z Version: 20250929.60.1
+2025-10-26T14:34:33.3789296Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250929.60/images/ubuntu/Ubuntu2404-Readme.md
+2025-10-26T14:34:33.3790862Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250929.60
+2025-10-26T14:34:33.3791979Z ##[endgroup]
+2025-10-26T14:34:33.3793309Z ##[group]GITHUB_TOKEN Permissions
+2025-10-26T14:34:33.3795096Z Contents: read
+2025-10-26T14:34:33.3795749Z Metadata: read
+2025-10-26T14:34:33.3796239Z Packages: read
+2025-10-26T14:34:33.3796767Z ##[endgroup]
+2025-10-26T14:34:33.3798753Z Secret source: Actions
+2025-10-26T14:34:33.3799505Z Prepare workflow directory
+2025-10-26T14:34:33.4112405Z Prepare all required actions
+2025-10-26T14:34:33.4153567Z Getting action download info
+2025-10-26T14:34:33.8307371Z Download action repository 'actions/checkout@v4' (SHA:08eba0b27e820071cde6df949e0beb9ba4906955)
+2025-10-26T14:34:34.2372651Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+2025-10-26T14:34:34.4759537Z Complete job name: build (22.x)
+2025-10-26T14:34:34.5387723Z ##[group]Run actions/checkout@v4
+2025-10-26T14:34:34.5388611Z with:
+2025-10-26T14:34:34.5389061Z   repository: Kamil1230xd/aura-idtoken
+2025-10-26T14:34:34.5389774Z   token: ***
+2025-10-26T14:34:34.5390224Z   ssh-strict: true
+2025-10-26T14:34:34.5390648Z   ssh-user: git
+2025-10-26T14:34:34.5391080Z   persist-credentials: true
+2025-10-26T14:34:34.5391553Z   clean: true
+2025-10-26T14:34:34.5392189Z   sparse-checkout-cone-mode: true
+2025-10-26T14:34:34.5392720Z   fetch-depth: 1
+2025-10-26T14:34:34.5393129Z   fetch-tags: false
+2025-10-26T14:34:34.5393560Z   show-progress: true
+2025-10-26T14:34:34.5393989Z   lfs: false
+2025-10-26T14:34:34.5394387Z   submodules: false
+2025-10-26T14:34:34.5394816Z   set-safe-directory: true
+2025-10-26T14:34:34.5395545Z ##[endgroup]
+2025-10-26T14:34:34.6462872Z Syncing repository: Kamil1230xd/aura-idtoken
+2025-10-26T14:34:34.6464731Z ##[group]Getting Git version info
+2025-10-26T14:34:34.6465621Z Working directory is '/home/runner/work/aura-idtoken/aura-idtoken'
+2025-10-26T14:34:34.6466724Z [command]/usr/bin/git version
+2025-10-26T14:34:34.7209043Z git version 2.51.0
+2025-10-26T14:34:34.7235931Z ##[endgroup]
+2025-10-26T14:34:34.7249585Z Temporarily overriding HOME='/home/runner/work/_temp/030d0f69-ad33-4452-a433-b45eb113e2a2' before making global git config changes
+2025-10-26T14:34:34.7251034Z Adding repository directory to the temporary git global config as a safe directory
+2025-10-26T14:34:34.7262281Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/aura-idtoken/aura-idtoken
+2025-10-26T14:34:34.7333678Z Deleting the contents of '/home/runner/work/aura-idtoken/aura-idtoken'
+2025-10-26T14:34:34.7337186Z ##[group]Initializing the repository
+2025-10-26T14:34:34.7341118Z [command]/usr/bin/git init /home/runner/work/aura-idtoken/aura-idtoken
+2025-10-26T14:34:34.8084651Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-10-26T14:34:34.8085899Z hint: is subject to change. To configure the initial branch name to use in all
+2025-10-26T14:34:34.8086937Z hint: of your new repositories, which will suppress this warning, call:
+2025-10-26T14:34:34.8087721Z hint:
+2025-10-26T14:34:34.8088279Z hint: 	git config --global init.defaultBranch <name>
+2025-10-26T14:34:34.8089215Z hint:
+2025-10-26T14:34:34.8089855Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-10-26T14:34:34.8090893Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-10-26T14:34:34.8091723Z hint:
+2025-10-26T14:34:34.8092363Z hint: 	git branch -m <name>
+2025-10-26T14:34:34.8092894Z hint:
+2025-10-26T14:34:34.8093578Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2025-10-26T14:34:34.8120280Z Initialized empty Git repository in /home/runner/work/aura-idtoken/aura-idtoken/.git/
+2025-10-26T14:34:34.8132134Z [command]/usr/bin/git remote add origin https://github.com/Kamil1230xd/aura-idtoken
+2025-10-26T14:34:34.8231412Z ##[endgroup]
+2025-10-26T14:34:34.8232449Z ##[group]Disabling automatic garbage collection
+2025-10-26T14:34:34.8235690Z [command]/usr/bin/git config --local gc.auto 0
+2025-10-26T14:34:34.8263902Z ##[endgroup]
+2025-10-26T14:34:34.8264622Z ##[group]Setting up auth
+2025-10-26T14:34:34.8270214Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-10-26T14:34:34.8299775Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-10-26T14:34:34.9981194Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-10-26T14:34:35.0013694Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-10-26T14:34:35.0233189Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-10-26T14:34:35.0275644Z ##[endgroup]
+2025-10-26T14:34:35.0277450Z ##[group]Fetching the repository
+2025-10-26T14:34:35.0286587Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +db91ee9a10f854a0e295e7c3afc10664710ee51f:refs/remotes/origin/main
+2025-10-26T14:34:35.5525855Z From https://github.com/Kamil1230xd/aura-idtoken
+2025-10-26T14:34:35.5528085Z  * [new ref]         db91ee9a10f854a0e295e7c3afc10664710ee51f -> origin/main
+2025-10-26T14:34:35.5895154Z ##[endgroup]
+2025-10-26T14:34:35.5897135Z ##[group]Determining the checkout info
+2025-10-26T14:34:35.5899358Z ##[endgroup]
+2025-10-26T14:34:35.5902984Z [command]/usr/bin/git sparse-checkout disable
+2025-10-26T14:34:35.6375028Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-10-26T14:34:35.6792706Z ##[group]Checking out the ref
+2025-10-26T14:34:35.6796754Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-10-26T14:34:35.7274697Z Switched to a new branch 'main'
+2025-10-26T14:34:35.7278112Z branch 'main' set up to track 'origin/main'.
+2025-10-26T14:34:35.7287690Z ##[endgroup]
+2025-10-26T14:34:35.7325121Z [command]/usr/bin/git log -1 --format=%H
+2025-10-26T14:34:35.7348638Z db91ee9a10f854a0e295e7c3afc10664710ee51f
+2025-10-26T14:34:35.7721495Z ##[group]Run actions/setup-node@v4
+2025-10-26T14:34:35.7722853Z with:
+2025-10-26T14:34:35.7723652Z   node-version: 22.x
+2025-10-26T14:34:35.7724570Z   cache: npm
+2025-10-26T14:34:35.7725401Z   always-auth: false
+2025-10-26T14:34:35.7726336Z   check-latest: false
+2025-10-26T14:34:35.7727502Z   token: ***
+2025-10-26T14:34:35.7728308Z ##[endgroup]
+2025-10-26T14:34:36.0629571Z Found in cache @ /opt/hostedtoolcache/node/22.20.0/x64
+2025-10-26T14:34:36.0636119Z ##[group]Environment details
+2025-10-26T14:34:38.7767126Z node: v22.20.0
+2025-10-26T14:34:38.7767626Z npm: 10.9.3
+2025-10-26T14:34:38.7767994Z yarn: 1.22.22
+2025-10-26T14:34:38.7770612Z ##[endgroup]
+2025-10-26T14:34:38.7795123Z [command]/opt/hostedtoolcache/node/22.20.0/x64/bin/npm config get cache
+2025-10-26T14:34:39.0519024Z /home/runner/.npm
+2025-10-26T14:34:39.0600726Z ##[error]Dependencies lock file is not found in /home/runner/work/aura-idtoken/aura-idtoken. Supported file patterns: package-lock.json,npm-shrinkwrap.json,yarn.lock
+2025-10-26T14:34:39.0755007Z Post job cleanup.
+2025-10-26T14:34:39.1683041Z [command]/usr/bin/git version
+2025-10-26T14:34:39.1724343Z git version 2.51.0
+2025-10-26T14:34:39.1768330Z Temporarily overriding HOME='/home/runner/work/_temp/c9146fed-910e-4ecb-9b75-0de6b39f75c6' before making global git config changes
+2025-10-26T14:34:39.1769643Z Adding repository directory to the temporary git global config as a safe directory
+2025-10-26T14:34:39.1775086Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/aura-idtoken/aura-idtoken
+2025-10-26T14:34:39.1811447Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-10-26T14:34:39.1844753Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-10-26T14:34:39.2105122Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-10-26T14:34:39.2125057Z http.https://github.com/.extraheader
+2025-10-26T14:34:39.2137030Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2025-10-26T14:34:39.2166426Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-10-26T14:34:39.2479892Z Cleaning up orphan processes
