@@ -1,0 +1,34 @@
+SEKCJA 1: STRUKTURA PROJEKTU I ZALEŻNOŚCI
+​Instrukcja:
+Wygeneruj kompletną strukturę katalogów i plików dla dwóch oddzielnych projektów: aura-genesis-sdk-python i aura-genesis-sdk-typescript. Nie pomijaj żadnego pliku. Następnie wypełnij pliki konfiguracyjne (pyproject.toml i package.json) wymaganymi zależnościami.
+​1.1. Struktura Projektu Python (aura-genesis-sdk-python):
+aura-genesis-sdk-python/
+├── aura_genesis_sdk/
+│   ├── init.py
+│   ├── client.py
+│   ├── providers/
+│   │   ├── init.py
+│   │   ├── base.py
+│   │   ├── evm.py
+│   │   └── cosmwasm.py
+│   ├── models.py
+│   └── errors.py
+├── tests/
+│   ├── init.py
+│   ├── unit/
+│   │   ├── init.py
+│   │   └── test_client.py
+│   └── integration/
+│       ├── init.py
+│       └── test_chainlet_lifecycle.py
+├── examples/
+│   ├── provision_and_mint.py
+│   └── gasless_transaction.py
+├── docs/
+│   ├── source/
+│   │   ├── conf.py
+│   │   ├── index.rst
+│   │   └── api.rst
+│   └── Makefile
+├── pyproject.toml
+└── README.md
